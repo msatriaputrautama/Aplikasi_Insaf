@@ -1,7 +1,7 @@
 <?php
 $CI = &get_instance();
 $CI->load->model('menu_model');
-$menus = $CI->menu_model->get_menus(0);
+$menus = $CI->menu_model->get_menu(0);
 $current_url = $CI->uri->segment(1);
 $current_suburl = $CI->uri->segment(2);
 ?>
@@ -19,7 +19,7 @@ $current_suburl = $CI->uri->segment(2);
 
     <ul class="sidebar-menu">
         <?php foreach ($menus as $menu):
-            $submenus = $CI->menu_model->get_menus($menu['id']);
+            $submenus = $CI->menu_model->get_menu($menu['id']);
             $is_active = ($current_url == $menu['url']) ? 'active' : '';
             
             // Cek apakah salah satu submenu memiliki URL yang cocok

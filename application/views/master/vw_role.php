@@ -18,7 +18,7 @@
                             <table id="role-table" class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
+                                        <th>No.</th>
                                         <th>Nama Role</th>
                                         <th>Deskripsi</th>
                                         <th>Waktu Dibuat</th>
